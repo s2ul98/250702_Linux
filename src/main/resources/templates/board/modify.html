@@ -59,21 +59,21 @@
                 //form~attr~submit: 서버에 게시물 수정 요청
                 //폼태그는 PUT방식을 사용할 수 없으므로, POST방식으로 처리
                 form
-                    .attr("action", "board/modify")
+                    .attr("action", "/board/modify")
                     .attr("method","post")
                     .submit();
             });
 
             $(".listBtn").click(function() {
                 form
-                    .attr("action", "board/list")
+                    .attr("action", "/board/list")
                     .attr("method","get")
               		.submit();
             })
 
             $(".removeBtn").click(function(){
             	form
-                    .attr("action", "board/remove")
+                    .attr("action", "/board/remove")
                     .attr("method","post")
                     .submit();
             });

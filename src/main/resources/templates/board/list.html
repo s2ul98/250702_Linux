@@ -32,7 +32,7 @@
 						<!--<a th:href="@{/board/read(no = ${dto.no})}">[[${dto.no}]]</a> -->
 					
 						<!-- 상세조회 링크 수정. 페이지 파라미터 추가 -->
-						<a th:href="@{board/read(no = ${dto.no}, page= ${list.number + 1})}">
+						<a th:href="@{/board/read(no = ${dto.no}, page= ${list.number + 1})}">
 							[[${dto.no}]]
 						</a>
 					</th>
