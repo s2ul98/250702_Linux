@@ -36,7 +36,7 @@
         </div>
 
         <!-- 버튼을 클릭하면 수정화면으로 이동 -->
-        <a th:href="@{/board/modify(no = ${dto.no})}"> <!-- (키=값) 부분은 파라미터로 (?no=1) 처리됨 -->
+        <a th:href="@{board/modify(no = ${dto.no})}"> <!-- (키=값) 부분은 파라미터로 (?no=1) 처리됨 -->
         	<button type="button" class="btn btn-primary">수정</button>
         </a>
 
@@ -46,7 +46,7 @@
         </a>-->
 
         <!-- 목록페이지 링크 수정. 페이지 파라미터 추가 -->
-        <a th:href="@{/board/list(page=${page})}">
+        <a th:href="@{board/list(page=${page})}">
             <button type="button" class="btn btn-info">목록으로</button>
         </a>
 
